@@ -6,8 +6,8 @@
   "scripts": {
     "watch": "tsc -w",
     "dev": "nodemon --inspect dist/index.js",
-    "build": "tsc",
-    "start": "yarn build && node dist/index.js"
+    "build": "npm install && tsc",
+    "start": "npm run build && node dist/index.js"
   },
   "dependencies": {
     "express": "^5.1.0"
