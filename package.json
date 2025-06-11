@@ -7,10 +7,16 @@
     "watch": "tsc -w",
     "dev": "nodemon --inspect dist/index.js",
     "build": "tsc",
-    "start": "yarn build && node dist/index.js"
+    "start": "yarn build && node dist/index.js",
+    "test": "jest"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "@types/jest": "^29.5.14",
+    "@types/supertest": "^6.0.3",
+    "express": "^5.1.0",
+    "jest": "^30.0.0",
+    "supertest": "^7.1.1",
+    "ts-jest": "^29.3.4"
   },
   "devDependencies": {
     "@types/express": "^5.0.2",
